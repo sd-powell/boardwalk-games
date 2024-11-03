@@ -23,22 +23,47 @@
 </head>
 
 <!-- Classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
+
 <body class="d-flex flex-column min-vh-100">
     <!-- Navigation -->
-     <div>Navigation
-        <a href="game-library.html">Library</a>
-     </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo-sm.png" alt="Boardwalk Games">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="game-library.html">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
 
-     <!-- Header with carousel -->
-      <header class="container">
+    <!-- Header with carousel -->
+    <header class="container">
         <div class="row">
             <div class="col-12 col-xl-6">Boardwalk Games intro text section</div>
             <div class="col-12 col-xl-6">Carousel</div>
         </div>
-      </header> 
+    </header>
 
-      <!-- main element to hold all key sections of the home page. It is not part of the grid structure -->
-      <main>
+    <!-- main element to hold all key sections of the home page. It is not part of the grid structure -->
+    <main>
         <!-- Services section -->
         <section class="container">
             <div class="row">
@@ -49,11 +74,11 @@
                 <div class="col-12 col-md-6 col-xl-3">Services card</div>
             </div>
         </section>
-      </main>
+    </main>
 
-      <!-- Footer / contact section -->
-       <!-- mt-auto added to push footer to the bottom of the page -->
-      <footer class="mt-auto">
+    <!-- Footer / contact section -->
+    <!-- mt-auto added to push footer to the bottom of the page -->
+    <footer class="mt-auto">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12">Contact section heading</div>
@@ -63,7 +88,7 @@
                 <div class="col-12 col-md-6 col-xl-4">Opening times</div>
             </div>
         </div>
-      </footer>
+    </footer>
 
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/357186c75c.js" crossorigin="anonymous"></script>
