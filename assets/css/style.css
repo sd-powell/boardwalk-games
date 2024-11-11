@@ -5,10 +5,14 @@
 :root {
     --primary-font: 'Inter', sans-serif;
     --secondary-font: 'Macondo', cursive;
-    --primary-color: #3a2620; /* dark brown */
-    --secondary-color: #aa9581; /* light brown */
-    --highlight-color: #416a8e; /* blue */
-    --highlight-color-light: #7a9fc2; /* light blue */
+    --primary-color: #3a2620;
+    /* dark brown */
+    --secondary-color: #aa9581;
+    /* light brown */
+    --highlight-color: #416a8e;
+    /* blue */
+    --highlight-color-light: #7a9fc2;
+    /* light blue */
 }
 
 /* Global styles */
@@ -101,6 +105,17 @@ h2 {
     border: none;
 }
 
+/* Events */
+
+span {
+    background-color: var(--highlight-color);
+    color: white;
+    margin: auto;
+    padding: 4px 0px;
+    font-size: 1rem;
+}
+
+
 /* Footer / contact */
 
 #contact {
@@ -137,30 +152,35 @@ h2 {
     background-color: transparent;
 }
 
-/* grid visualisation CSS for testing */
-
-/* .container,
-.row {
-    border: 2px solid black;
-}
-
-.col-12 {
-    border: 2px solid white;
-    background-color: lightgray;
-} */
 
 /* Media queries */
 
+/* Mobile devices (mobiles, up to 370px) */
+@media (min-width: 150px) and (max-width: 370px) {
+#events-table {
+    font-size: 0.7rem;
+}
+
+#discount, 
+span {
+    font-size: 0.8rem;
+}
+
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Make all service cards the same for consistency */
     #services .card-body {
         min-height: 191px;
     }
+
 }
 
 /* Large devices (tablets, 992px and up) */
 @media screen and (min-width: 992px) {
+
     /* Make all service cards the same for consistency */
     #services .card-body {
         min-height: auto;
@@ -169,6 +189,7 @@ h2 {
 
 /* xl devices (tablets, 1200px and up) */
 @media screen and (min-width: 1200px) {
+
     /* Make all service cards the same for consistency */
     #services .card-body {
         min-height: 220px;
@@ -177,6 +198,7 @@ h2 {
 
 /* xxl devices (tablets, 1400px and up) */
 @media screen and (min-width: 1400px) {
+
     /* Make all service cards the same for consistency */
     #services .card-body {
         min-height: 195px;
