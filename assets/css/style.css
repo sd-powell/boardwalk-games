@@ -71,6 +71,10 @@ h2 {
     color: white;
 }
 
+#reserve-submit-btn {
+    text-align: right;
+}
+
 /* Navbar */
 
 #navbar {
