@@ -54,6 +54,7 @@
                     <li class="nav-item">
                         <a href="booking.html" class="btn custom-button-filled ms-lg-3">Book now</a>
                     </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -128,7 +129,7 @@
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
                         <img src="assets/images/new-games-2.webp" class="card-img-top"
-                            alt="Mystic Woods board game box" />
+                            alt="Mystic Woods board game box" >
                         <div class="card-body">
                             <!-- bootstrap cards come as h5 by default, changed to h3 to fit project heading hierarchy -->
                             <h3 class="card-title sub-heading-color">Mystic Woods</h3>
@@ -144,7 +145,7 @@
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
                         <img src="assets/images/new-games-3.webp" class="card-img-top"
-                            alt="Captain's Gambit board game box" />
+                            alt="Captain's Gambit board game box" >
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Captain's Gambit</h3>
                             <p class="card-text">
@@ -159,7 +160,7 @@
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
                         <img src="assets/images/new-games-4.webp" class="card-img-top"
-                            alt="Critter Quest board game box" />
+                            alt="Critter Quest board game box" >
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Critter Quest</h3>
                             <p class="card-text">
@@ -182,7 +183,7 @@
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
                         <img src="assets/images/fav-games-1.webp" class="card-img-top"
-                            alt="Settlers of Catan board game" />
+                            alt="Settlers of Catan board game" >
                         <div class="card-body">
                             <!-- bootstrap cards come as h5 by default, changed to h3 to fit project heading hierarchy -->
                             <h3 class="card-title sub-heading-color">Settlers of Catan</h3>
@@ -197,7 +198,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img src="assets/images/fav-games-2.webp" class="card-img-top" alt="Monopoly board game" />
+                        <img src="assets/images/fav-games-2.webp" class="card-img-top" alt="Monopoly board game" >
                         <div class="card-body">
                             <!-- bootstrap cards come as h5 by default, changed to h3 to fit project heading hierarchy -->
                             <h3 class="card-title sub-heading-color">Monopoly</h3>
@@ -249,52 +250,51 @@
                 <div class="col-12 col-md-8">
                     <h2 class="display-6 text-center">Reserve a game</h2>
                 </div>
-                    <p>
-                        Reserve a board game for your next visit to Boardwalk Games. Pick your challenge, and let the
-                        adventure begin! Fill out your details and preferred game below, and we'll have it set aside for
-                        you when you arrive.
-                    </p>
-                    <!-- reserve game form -->
-                    <form action="success.html" method="GET">
-                        <div class="row">
-                            <div class="col-12 col-lg-4 mb-3">
-                                <label for="full-name" class="form-label">Full name</label>
-                                <input class="form-control" id="full-name" name="full-name" type="text" required>
-                            </div>
-                            <div class="col-12 col-lg-4 mb-3">
-                                <label for="phone" class="form-label">Phone number</label>
-                                <input class="form-control" id="phone" name="phone" type="number" required>
-                            </div>
-                            <div class="col-12 col-lg-4 mb-3">
-                                <label for="email" class="form-label">Email address</label>
-                                <input class="form-control" id="email" name="email" type="email" required>
-                            </div>
-                            <div class="col-12 col-lg-8 mb-3">
-                                <label for="game-selection" class="form-label">Select game</label>
-                                <select id="game-selection" class="form-select" name="game-selection" required>
-                                    <option value="" selected>Select game</option>
-                                    <option value="galaxy-pioneers">Galaxy Pioneers</option>
-                                    <option value="mystic-woods">Mystic Woods</option>
-                                    <option value="captains-gambit">Captain's Gambit</option>
-                                    <option value="critter-quest">Critter Quest</option>
-                                    <option value="setters-of-catan">Setters of Catan</option>
-                                    <option value="monopoly">Monopoly</option>
-                                    <option value="exploding-kittens">Exploding Kittens</option>
-                                    <option value="cluedo">Cluedo</option>
-                                </select>
-                            </div>
-                            <div class="col-12 col-lg-4 mb-3">
-                                <label for="date" class="form-label">Requested date</label>
-                                <input class="form-control" id="date" name="date" type="date" required>
-                            </div>
-                            <div class="col-12 text-end">
-                                <button type="submit" class="btn custom-button-outline mt-3">Submit</button>
-                            </div>
+                <p>
+                    Reserve a board game for your next visit to Boardwalk Games. Pick your challenge, and let the
+                    adventure begin! Fill out your details and preferred game below, and we'll have it set aside for
+                    you when you arrive.
+                </p>
+                <!-- reserve game form -->
+                <form action="success.html" method="GET">
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mb-3">
+                            <label for="full-name" class="form-label">Full name</label>
+                            <input class="form-control" id="full-name" name="full-name" type="text" required>
                         </div>
-    
-                        
-                    </form>
-                </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <label for="phone" class="form-label">Phone number</label>
+                            <input class="form-control" id="phone" name="phone" type="number" required>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input class="form-control" id="email" name="email" type="email" required>
+                        </div>
+                        <div class="col-12 col-lg-8 mb-3">
+                            <label for="game-selection" class="form-label">Select game</label>
+                            <select id="game-selection" class="form-select" name="game-selection" required>
+                                <option value="" selected>Select game</option>
+                                <option value="galaxy-pioneers">Galaxy Pioneers</option>
+                                <option value="mystic-woods">Mystic Woods</option>
+                                <option value="captains-gambit">Captain's Gambit</option>
+                                <option value="critter-quest">Critter Quest</option>
+                                <option value="setters-of-catan">Setters of Catan</option>
+                                <option value="monopoly">Monopoly</option>
+                                <option value="exploding-kittens">Exploding Kittens</option>
+                                <option value="cluedo">Cluedo</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <label for="date" class="form-label">Requested date</label>
+                            <input class="form-control" id="date" name="date" type="date" required>
+                        </div>
+                        <div class="col-12 text-end">
+                            <button type="submit" class="btn custom-button-outline mt-3">Submit</button>
+                        </div>
+                    </div>
+
+
+                </form>
             </div>
         </section>
 
@@ -376,26 +376,26 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
     <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
-<script>
-    document
-        .querySelectorAll(".navbar-collapse .nav-link")
-        .forEach((link) => {
-            link.addEventListener("click", function (e) {
-                let section = document.querySelector(e.target.getAttribute("href"));
-                if (section) {
-                    e.preventDefault(); // Prevent default anchor click behavior
-                    let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
-                    window.scroll({
-                        top: section.offsetTop - navbarHeight, // Adjust for navbar height
-                        behavior: "smooth",
-                    });
-                    document
-                        .querySelector(".navbar-collapse")
-                        .classList.remove("show"); // Collapse navbar
-                }
+    <script>
+        document
+            .querySelectorAll(".navbar-collapse .nav-link")
+            .forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    let section = document.querySelector(e.target.getAttribute("href"));
+                    if (section) {
+                        e.preventDefault(); // Prevent default anchor click behavior
+                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                        window.scroll({
+                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                            behavior: "smooth",
+                        });
+                        document
+                            .querySelector(".navbar-collapse")
+                            .classList.remove("show"); // Collapse navbar
+                    }
+                });
             });
-        });
-</script>
+    </script>
 </body>
 
 </html>
