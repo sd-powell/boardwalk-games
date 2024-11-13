@@ -43,8 +43,7 @@ h2 {
 }
 
 .section {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    padding-top: 4rem; /* prevent navbar overlap */
 }
 
 /* Buttons */
@@ -70,10 +69,6 @@ h2 {
 .custom-button-outline:hover {
     background-color: var(--highlight-color);
     color: white;
-}
-
-#reserve-submit-btn {
-    text-align: right;
 }
 
 /* Navbar */
@@ -103,23 +98,33 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/* Events */
+
+#events .table {
+    /* events table font size small enough that 
+      the table doesn't overflow on xs screens. 
+      Size set back to 1rem in a media query 
+      for sm screens and up */
+    font-size: 0.7rem;
+}
+
+.student-discount {
+    background-color: var(--highlight-color);
+    font-weight: bold;
+    color: white;
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+
 /* Games library cards */
 
 #new-games .card,
 #fav-games .card {
     border: none;
 }
-
-/* Events */
-
-span {
-    background-color: var(--highlight-color);
-    color: white;
-    margin: auto;
-    padding: 4px 0px;
-    font-size: 1rem;
-}
-
 
 /* Footer / contact */
 
@@ -160,17 +165,15 @@ span {
 
 /* Media queries */
 
-/* Mobile devices (mobiles, up to 370px) */
-@media (min-width: 150px) and (max-width: 370px) {
-#events-table {
-    font-size: 0.7rem;
-}
-
-#discount, 
-span {
-    font-size: 0.8rem;
-}
-
+/* Small screens and up */
+@media screen and (min-width: 576px) {
+    /* increase font size in events table when screen size is large enough */
+    #events .table {
+        font-size: 1rem;
+    }
+    .student-discount {
+        font-size: 1rem;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */

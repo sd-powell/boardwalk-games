@@ -17,7 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- Link to CSS -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -200,7 +200,7 @@
             <div class="col-12 text-center">
                 <h2 class="display-6">Join our events</h2>
             </div>
-            <div class="col-12 col-xl-6 text-xl-start">
+            <div class="col-12 col-xl-6">
                 <p>Whether you're delving into dungeons, reliving classic games, or competing in high-stakes
                     tournaments, there's something for every gamer. Reservations are recommended to ensure your spot at
                     the table. Student discounts are available, so bring your student ID and enjoy more gaming for less.
@@ -212,10 +212,10 @@
                 <table id="events-table" class="table table-hover">
                     <thead>
                         <tr>
-                            <th id="event-col" class="col-md-4 col-xxl-3 col-xl-3" scope="col">Event</th>
-                            <th id="date-col" class="col-md-2 col-xxl-2 col-xl-3" scope="col">Date</th>
-                            <th id="time-col" class="col-md-2 col-xxl-2 col-xl-2" scope="col">Time</th>
-                            <th id="price-col" class="col-md-4 col-xxl-3 col-xl-3" scope="col">Price</th>
+                            <th scope="col">Event</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Price</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -239,14 +239,13 @@
                         </tr>
                     </tbody>
                 </table>
-                <div id="discount" class="container">
-                    <div class="row text-center">
-                        <span class="col-md-5 col-xl-7 col-xxl-6"><strong>*Get 20% off with valid student ID</strong></span>
-                    </div>
-                </div>
+
+
+                <p class="student-discount text-center">*Get 20% off with valid student ID</p>
+
             </div>
-            <div class="col-12 text-center mt-4 mb-4">
-                <a href="booking.html" class="btn custom-button-outline">Book now</a>
+            <div class="col-12 text-center">
+                <a href="booking.html" class="btn custom-button-outline my-4">Book now</a>
             </div>
         </div>
     </section>
